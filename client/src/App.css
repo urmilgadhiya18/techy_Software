@@ -1,0 +1,37 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  background: #1a1a1a;
+}
+::-webkit-scrollbar {
+  width: 4px; 
+  background-color: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #5a5a5a;
+}
+.review-item-back:hover::-webkit-scrollbar-thumb{
+  background-color: #5a5a5a;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-gradient: linear-gradient(61deg, #217BFE 0.0%, #078EFB 27.0%, #A190FF 78.0%, #BD99FE 100.0%);
+  --gradient-linear: linear-gradient(53deg, #0260FF 9.29%, #40A2FF 48.23%, #A8BEFF 82.56%);
+  --text-_gradient: var(--text-gradient, var(--gradient-linear));
+
+  --button-gradient: linear-gradient(15deg, #217BFE 1.02%, #078EFB 28.51%, #A190FF 80.14%, #BD99FE 102.85%);
+  --button-fill: var(--button-gradient);
+  --primary-button-gradient: linear-gradient(52deg, #0844ff 11.5%, #64b8fb 129.52%);
+  --button-background: var(--button-fill, var(--primary-button-gradient));
+}
+.text{
+  background: var(--text-_gradient);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  /* text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
+}
